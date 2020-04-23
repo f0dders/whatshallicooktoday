@@ -1,0 +1,63 @@
+body {
+  max-width: 1600px;
+  font-family: 'Manrope', sans-serif;
+  background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+#search_form {
+  text-align: center;
+  width: 100%;
+}
+
+#homepage-h2-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#food-select-field {
+  width: 60%;
+}
+
+.select2-selection.select2-selection--multiple, .select2-container--default.select2-selection--multiple {
+  border: none !important;
+  -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+}
+
+.gsc-expansionArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gsc-expansionArea .gsc-webResult {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px !important;
+}
+/*# sourceMappingURL=style.css.map */
