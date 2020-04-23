@@ -55,9 +55,15 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 20px;
+  padding: 20px !important;
   background-color: #fff;
   border-radius: 5px;
   margin: 10px !important;
+  -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+  background-color: #EDF0F4 !important;
 }
 /*# sourceMappingURL=style.css.map */
