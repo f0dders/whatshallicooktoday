@@ -37,6 +37,29 @@ body {
   width: 60%;
 }
 
+.submit-btn {
+  padding: 15px;
+  background-color: #5b616a;
+  color: #edf0f4;
+}
+
+h2#homepage-h2-title {
+  color: #5b616a;
+}
+
+@media only screen and (min-width: 768px) {
+  .gsc-expansionArea .gsc-webResult {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gsc-expansionArea .gsc-webResult {
+    width: 25%;
+  }
+}
+
+/* SELECT2 */
 .select2-selection.select2-selection--multiple,
 .select2-container--default.select2-selection--multiple {
   border: none !important;
@@ -52,6 +75,8 @@ body {
   padding: 10px;
 }
 
+/***************/
+/* GOOGLE CSE */
 .gsc-expansionArea {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,28 +104,6 @@ body {
 .gsc-control-cse {
   background-color: #edf0f4 !important;
   border: none !important;
-}
-
-.submit-btn {
-  padding: 15px;
-  background-color: #5b616a;
-  color: #edf0f4;
-}
-
-h2#homepage-h2-title {
-  color: #5b616a;
-}
-
-@media only screen and (min-width: 768px) {
-  .gsc-expansionArea .gsc-webResult {
-    width: 45%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .gsc-expansionArea .gsc-webResult {
-    width: 25%;
-  }
 }
 
 /* Thank you w3schools... */
@@ -143,7 +146,6 @@ h2#homepage-h2-title {
   }
 }
 
-/* Add animation to "page content" */
 .animate-bottom {
   -webkit-animation-name: animatebottom;
           animation-name: animatebottom;

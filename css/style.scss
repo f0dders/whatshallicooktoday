@@ -40,6 +40,30 @@ body {
 	width: 60%;
 }
 
+.submit-btn {
+	padding: 15px;
+	background-color: $color5;
+	color: $color6;
+}
+
+h2#homepage-h2-title {
+	color: $color5;
+}
+
+@media only screen and (min-width: 768px) {
+	.gsc-expansionArea .gsc-webResult {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.gsc-expansionArea .gsc-webResult {
+		width: 25%;
+	}
+}
+
+/* SELECT2 */
+
 .select2-selection.select2-selection--multiple,
 .select2-container--default.select2-selection--multiple {
 	border: none !important;
@@ -53,6 +77,10 @@ body {
 .select2-selection.select2-selection--multiple {
 	padding: 10px;
 }
+
+/***************/
+
+/* GOOGLE CSE */
 
 .gsc-expansionArea {
 	display: flex;
@@ -74,28 +102,6 @@ body {
 .gsc-control-cse {
 	background-color: $color6 !important;
 	border: none !important;
-}
-
-.submit-btn {
-	padding: 15px;
-	background-color: $color5;
-	color: $color6;
-}
-
-h2#homepage-h2-title {
-	color: $color5;
-}
-
-@media only screen and (min-width: 768px) {
-	.gsc-expansionArea .gsc-webResult {
-		width: 45%;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.gsc-expansionArea .gsc-webResult {
-		width: 25%;
-	}
 }
 
 /* Thank you w3schools... */
@@ -125,7 +131,6 @@ h2#homepage-h2-title {
 	}
 }
 
-/* Add animation to "page content" */
 .animate-bottom {
 	animation-name: animatebottom;
 	animation-duration: 0.8s;
