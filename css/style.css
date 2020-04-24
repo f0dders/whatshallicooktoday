@@ -43,8 +43,12 @@ body {
           box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
 }
 
-.select2-container {
+.select2.select2-container.select2-container--default {
   width: 60% !important;
+}
+
+.select2-selection.select2-selection--multiple {
+  padding: 10px;
 }
 
 .gsc-expansionArea {
@@ -75,6 +79,16 @@ body {
   border: none !important;
 }
 
+.submit-btn {
+  padding: 15px;
+  background-color: #5b616a;
+  color: #EDF0F4;
+}
+
+h2#homepage-h2-title {
+  color: #5b616a;
+}
+
 @media only screen and (min-width: 768px) {
   .gsc-expansionArea .gsc-webResult {
     width: 45%;
@@ -102,15 +116,17 @@ body {
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -127,7 +143,6 @@ body {
 
 /* Add animation to "page content" */
 .animate-bottom {
-  position: relative;
   -webkit-animation-name: animatebottom;
           animation-name: animatebottom;
   -webkit-animation-duration: 0.8s;

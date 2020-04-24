@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="about">About</a>
         </div>
       </div>
     </nav>
@@ -33,7 +33,7 @@
         <h2 id="homepage-h2-title">What ingredients do you have?</h2>
         <form id="search_form" method="GET" onsubmit="appendResults();return false">
           <select id="food-select-field" class="food-selector" multiple="multiple"></select>
-          <input class="btn btn-primary" type="submit" value="Search" disabled>
+          <input class="btn submit-btn" type="submit" value="Search" disabled>
           <button class="btn" onclick="clearResults();return false">Clear</button>
         </form>
 

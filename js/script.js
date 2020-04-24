@@ -11,6 +11,11 @@ $(document).ready(function () {
         $('#results-wrapper').css('display', 'none');
         $('#form-wrapper').css('height', '70vh');
     }
+    
+    if (new URLSearchParams(window.location.search).has("q") == true) {
+        $('#homepage-h2-title').css('display', 'none');
+    }
+ 
 });
 
 function appendResults() {
