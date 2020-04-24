@@ -6,19 +6,6 @@ $(document).ready(function () {
         tags: true,
         tokenSeparators: [',', ' '],
         placeholder: "Start typing...",
-        createTag: function (params) {
-            var term = $.trim(params.term);
-        
-            if (term === '') {
-              return null;
-            }
-        
-            return {
-              id: term,
-              text: term,
-              newTag: true // add additional parameters
-            }
-          }
     });
 
     let searchParams = new URLSearchParams(window.location.search);

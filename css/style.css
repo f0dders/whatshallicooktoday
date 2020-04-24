@@ -1,6 +1,10 @@
+.navbar {
+  padding: 1.5em 3em;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
-  background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg) no-repeat center center fixed;
+  background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash_low.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -15,7 +19,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
+  padding: 0 0 50px 0;
 }
 
 #search_form {
@@ -37,6 +41,10 @@ body {
   border: none !important;
   -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
           box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+}
+
+.select2-container {
+  width: 60% !important;
 }
 
 .gsc-expansionArea {
@@ -64,6 +72,7 @@ body {
 
 .cse .gsc-control-cse, .gsc-control-cse {
   background-color: #EDF0F4 !important;
+  border: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,6 +84,71 @@ body {
 @media only screen and (min-width: 992px) {
   .gsc-expansionArea .gsc-webResult {
     width: 25%;
+  }
+}
+
+/* Thank you w3schools... */
+#content-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #275dad;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+          animation-name: animatebottom;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

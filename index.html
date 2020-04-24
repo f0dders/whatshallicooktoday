@@ -7,23 +7,41 @@
   <title>What shall I cook today?</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div id="search-wrapper">
-    <div id="form-wrapper">
-      <h2 id="homepage-h2-title">What ingredients do you have?</h2>
-      <form id="search_form" method="GET" onsubmit="appendResults();return false">
-        <select id="food-select-field" class="food-selector" multiple="multiple"></select>
-        <input class="btn btn-primary" type="submit" value="Search" disabled>
-        <button class="btn" onclick="clearResults();return false">Clear</button>
-      </form>
+<body onload="loadSpinner()">
+  <div id="content-loader"></div>
+  <div id="content-wrapper" style="display: none;" class="animate-bottom">
+    <nav class="navbar navbar-expand-sm">
+      <a class="navbar-brand" href="#"><img src="images/wsic-logo.png" width="150" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+    <div id="search-wrapper">
+      <div id="form-wrapper">
+        <h2 id="homepage-h2-title">What ingredients do you have?</h2>
+        <form id="search_form" method="GET" onsubmit="appendResults();return false">
+          <select id="food-select-field" class="food-selector" multiple="multiple"></select>
+          <input class="btn btn-primary" type="submit" value="Search" disabled>
+          <button class="btn" onclick="clearResults();return false">Clear</button>
+        </form>
 
+      </div>
+      <div id="results-wrapper">
+        <div class="gcse-searchresults-only"></div>
+      </div>
     </div>
-    <div class="gcse-searchresults-only"></div>
   </div>
   <!----- JS ------>
   <script async src="https://cse.google.com/cse.js?cx=006306278796615657016:azh7gddkf47"></script>

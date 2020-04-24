@@ -7,6 +7,10 @@ $(document).ready(function () {
     //     // Do something
     //     $(':input[type="submit"]').attr('disabled', 'disabled');
     // });
+    if (new URLSearchParams(window.location.search).has("q") == false) {
+        $('#results-wrapper').css('display', 'none');
+        $('#form-wrapper').css('height', '70vh');
+    }
 });
 
 function appendResults() {
@@ -24,3 +28,16 @@ function appendResults() {
 function clearResults() {
     $('.food-selector').val(null).trigger('change');
 }
+
+// Thank you w3schools...
+
+var loadSpinnerTime;
+
+function loadSpinner() {
+    loadSpinnerTime = setTimeout(showPage, 500);
+  }
+  
+  function showPage() {
+    document.getElementById("content-loader").style.display = "none";
+    document.getElementById("content-wrapper").style.display = "block";
+  }
