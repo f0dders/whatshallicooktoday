@@ -3,129 +3,139 @@ $color2: #ced3dc;
 $color3: #aba9c3;
 $color4: #275dad;
 $color5: #5b616a;
-$color6: #EDF0F4;
+$color6: #edf0f4;
 
 .navbar {
-    padding: 1.5em 3em;
+	padding: 1.5em 3em;
 }
 
 body {
-    // max-width: 1600px;
-    font-family: 'Manrope', sans-serif;
-    background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash_low.jpg)no-repeat center center fixed;
-    background-size: cover;
+	// max-width: 1600px;
+	font-family: "Manrope", sans-serif;
+	background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash_low.jpg) no-repeat
+		center center fixed;
+	background-size: cover;
 }
 
 #form-wrapper {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 0 50px 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0 0 50px 0;
 }
 
 #search_form {
-    text-align: center;
-    width: 100%;
+	text-align: center;
+	width: 100%;
 }
 
 #homepage-h2-title {
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 10px;
 }
 
 #food-select-field {
-    width: 60%;
+	width: 60%;
 }
 
-.select2-selection.select2-selection--multiple, .select2-container--default.select2-selection--multiple {
-    border: none !important;
-    box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.253);
+.select2-selection.select2-selection--multiple,
+.select2-container--default.select2-selection--multiple {
+	border: none !important;
+	box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
 }
 
 .select2.select2-container.select2-container--default {
-    width: 60% !important;
+	width: 60% !important;
 }
 
 .select2-selection.select2-selection--multiple {
-    padding: 10px;
+	padding: 10px;
 }
 
 .gsc-expansionArea {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
-    .gsc-webResult {
-        width: 100%;
-        flex: 1 1 auto;
-        padding: 20px !important;
-        background-color: #fff;
-        border-radius: 5px;
-        margin: 10px !important;
-        box-shadow: 0px 5px 5px -6px rgba(0,0,0,0.253);
-
-    }
+	.gsc-webResult {
+		width: 100%;
+		flex: 1 1 auto;
+		padding: 20px !important;
+		background-color: #fff;
+		border-radius: 5px;
+		margin: 10px !important;
+		box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+	}
 }
 
-.cse .gsc-control-cse, .gsc-control-cse {
-    background-color: $color6 !important;
-    border: none !important;
+.cse .gsc-control-cse,
+.gsc-control-cse {
+	background-color: $color6 !important;
+	border: none !important;
 }
 
 .submit-btn {
-    padding: 15px;
-    background-color: $color5;
-    color: $color6;
+	padding: 15px;
+	background-color: $color5;
+	color: $color6;
 }
 
 h2#homepage-h2-title {
-    color: $color5;
+	color: $color5;
 }
 
 @media only screen and (min-width: 768px) {
-    .gsc-expansionArea .gsc-webResult {
-        width: 45%;
-    }
+	.gsc-expansionArea .gsc-webResult {
+		width: 45%;
+	}
 }
 
 @media only screen and (min-width: 992px) {
-    .gsc-expansionArea .gsc-webResult {
-        width: 25%;
-    }
+	.gsc-expansionArea .gsc-webResult {
+		width: 25%;
+	}
 }
 
 /* Thank you w3schools... */
 
 #content-loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid $color4;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    animation-name: animatebottom;
-    animation-duration: 0.8s
-  }
-  
-  @keyframes animatebottom { 
-    from{ opacity:0 } 
-    to{ opacity:1 }
-  }
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid $color4;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+	animation-name: animatebottom;
+	animation-duration: 0.8s;
+}
+
+@keyframes animatebottom {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

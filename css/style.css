@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash_low.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -37,7 +37,8 @@ body {
   width: 60%;
 }
 
-.select2-selection.select2-selection--multiple, .select2-container--default.select2-selection--multiple {
+.select2-selection.select2-selection--multiple,
+.select2-container--default.select2-selection--multiple {
   border: none !important;
   -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
           box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
@@ -74,15 +75,16 @@ body {
           box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
 }
 
-.cse .gsc-control-cse, .gsc-control-cse {
-  background-color: #EDF0F4 !important;
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  background-color: #edf0f4 !important;
   border: none !important;
 }
 
 .submit-btn {
   padding: 15px;
   background-color: #5b616a;
-  color: #EDF0F4;
+  color: #edf0f4;
 }
 
 h2#homepage-h2-title {
