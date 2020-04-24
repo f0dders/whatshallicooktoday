@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    var data = ["Banana", "Orange", "Apple", "Mango"];
+    var data = ["Banana", "Orange", "Apple", "Mango", "Pasta"];
     
     $(".food-selector").select2({
         data: data,
         tags: true,
-        tokenSeparators: [',', ' '],
+        tokenSeparators: [','],
         placeholder: "Start typing...",
     });
 
