@@ -42,6 +42,6 @@ function loadSpinner() {
 }
 
 function showPage() {
-	document.getElementById("content-loader").style.display = "none";
-	document.getElementById("content-wrapper").style.display = "block";
+    $("#content-loader").css("display", "none");
+    $("#content-wrapper").css("display", "block");
 }
