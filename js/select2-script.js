@@ -1,11 +1,13 @@
 $(document).ready(function () {
-	var data = ["Banana", "Orange", "Apple", "Mango", "Pasta"];
+	var data = ["Banana", "Orange", "Apple", "Mango", "Pasta", "Onion", "Chopped-Tomatoes", "Pepper"];
 
 	$(".food-selector").select2({
 		data: data,
 		tags: true,
 		tokenSeparators: [","],
-		placeholder: "Start typing...",
+        placeholder: "Start typing...",
+        allowClear: true,
+        width: 'resolve'
 	});
 
 	let searchParams = new URLSearchParams(window.location.search);

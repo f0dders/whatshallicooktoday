@@ -14,7 +14,15 @@ $(document).ready(function () {
 
 	if (new URLSearchParams(window.location.search).has("q") == true) {
 		$("#homepage-h2-title").css("display", "none");
-	}
+    }
+    
+
+    //Not working yet. Need to replace hyphen with space in search box, not affecting appended options to search string.
+    
+    // $(".select2-results__options li").each(function() {
+    //     let text = $(this).text();
+    //     $(this).text(text.replace('-', 'hello'))
+    // });
 });
 
 function appendResults() {

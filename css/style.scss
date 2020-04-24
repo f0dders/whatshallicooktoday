@@ -50,37 +50,29 @@ h2#homepage-h2-title {
 	color: $color5;
 }
 
-@media only screen and (min-width: 768px) {
-	.gsc-expansionArea .gsc-webResult {
-		width: 45%;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	.gsc-expansionArea .gsc-webResult {
-		width: 25%;
-	}
-}
-
 /* SELECT2 */
 
 .select2-selection.select2-selection--multiple,
-.select2-container--default.select2-selection--multiple {
+.select2-container--default.select2-selection--multiple, .select2-dropdown {
 	border: none !important;
 	box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
-}
-
-.select2.select2-container.select2-container--default {
-	width: 60% !important;
 }
 
 .select2-selection.select2-selection--multiple {
 	padding: 10px;
 }
 
+input.select2-search__field {
+    width: inherit !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: $color4;
+}
+
 /***************/
 
-/* GOOGLE CSE */
+/* GOOGLE CSE below. Here be !important's... */
 
 .gsc-expansionArea {
 	display: flex;
@@ -101,7 +93,20 @@ h2#homepage-h2-title {
 .cse .gsc-control-cse,
 .gsc-control-cse {
 	background-color: $color6 !important;
-	border: none !important;
+    border: none !important;
+    font-family: "Manrope", sans-serif !important;
+}
+
+.gsc-table-result {
+    font-family: "Manrope", sans-serif !important;
+}
+
+.gs-web-image-box {
+    width: inherit !important;
+
+    img.gs-image {
+        max-width: 200px !important;
+    }
 }
 
 /* Thank you w3schools... */
@@ -142,5 +147,19 @@ h2#homepage-h2-title {
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+/* HERE BE MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+	.gsc-expansionArea .gsc-webResult {
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.gsc-expansionArea .gsc-webResult {
+		width: 25%;
 	}
 }
