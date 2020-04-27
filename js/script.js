@@ -2,11 +2,10 @@ $(document).ready(function () {
 	$(".food-selector").on("select2:select", function (e) {
 		$(':input[type="submit"]').removeAttr("disabled");
 	});
-	// Not working yet:
-	// $(".food-selector").on("select2:clear", function (e) {
-	//     // Do something
-	//     $(':input[type="submit"]').attr('disabled', 'disabled');
-	// });
+	$(".food-selector").on("select2:clear", function (e) {
+		// Do something
+		$(':input[type="submit"]').attr("disabled", "disabled");
+	});
 	if (new URLSearchParams(window.location.search).has("q") == false) {
 		$("#results-wrapper").css("display", "none");
 		$("#form-wrapper").css("height", "70vh");
@@ -29,8 +28,6 @@ function appendResults() {
 	window.history.replaceState({}, "", `${window.location.pathname}?${params}`);
 	location.reload();
 }
-
-//TAKE 2. Easier to just append a dash to each option before appending to URL parameter?
 
 function clearResults() {
 	$(".food-selector").val(null).trigger("change");
