@@ -49,7 +49,8 @@ h2#homepage-h2-title {
 
 /* SELECT2 */
 .select2-selection.select2-selection--multiple,
-.select2-container--default.select2-selection--multiple, .select2-dropdown {
+.select2-container--default.select2-selection--multiple,
+.select2-dropdown {
   border: none !important;
   -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
           box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
@@ -63,7 +64,8 @@ input.select2-search__field {
   width: inherit !important;
 }
 
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
+.select2-container--default
+.select2-results__option--highlighted[aria-selected] {
   background: #275dad;
 }
 

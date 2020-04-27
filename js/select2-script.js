@@ -1,13 +1,22 @@
 $(document).ready(function () {
-	var data = ["Banana", "Orange", "Apple", "Mango", "Pasta", "Onion", "Chopped-Tomatoes", "Pepper"];
+	var data = [
+		"Banana",
+		"Orange",
+		"Apple",
+		"Mango",
+		"Pasta",
+		"Onion",
+		"Chopped-Tomatoes",
+		"Pepper",
+	];
 
 	$(".food-selector").select2({
 		data: data,
 		tags: true,
 		tokenSeparators: [","],
-        placeholder: "Start typing...",
-        allowClear: true,
-        width: 'resolve'
+		placeholder: "Start typing...",
+		allowClear: true,
+		width: "resolve",
 	});
 
 	let searchParams = new URLSearchParams(window.location.search);
