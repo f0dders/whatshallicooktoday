@@ -6,7 +6,10 @@ $(document).ready(function () {
 		"Mango",
 		"Pasta",
 		"Onion",
-		"Chopped-Tomatoes",
+		{
+			id: "Chopped-Tomatoes",
+			text: "Chopped Tomatoes",
+		},
 		"Pepper",
 	];
 
