@@ -8,6 +8,15 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 2em 0 0.5em 0;
+}
+
 #form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +54,26 @@ body {
 
 h2#homepage-h2-title {
   color: #5b616a;
+}
+
+.body-text-wrapper {
+  background-color: #edf0f4;
+  height: 100vh;
+}
+
+.body-text {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
+  color: #5b616a;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+footer {
+  padding: 2em;
+  background: #5b616a;
+  text-align: center;
 }
 
 /* SELECT2 */
@@ -111,6 +140,22 @@ input.select2-search__field {
 
 .gs-web-image-box img.gs-image {
   max-width: 200px !important;
+}
+
+.gsc-cursor-box {
+  text-align: center !important;
+  padding: 20px 0px;
+}
+
+.gsc-cursor-box .gsc-cursor-page {
+  padding: 10px 15px;
+  background-color: #5b616a;
+  color: #fff !important;
+  border-radius: 20px;
+}
+
+.gsc-cursor-box .gsc-cursor-page:hover {
+  background-color: #aba9c3;
 }
 
 /* Thank you w3schools... */
@@ -182,6 +227,10 @@ input.select2-search__field {
 @media only screen and (min-width: 768px) {
   .gsc-expansionArea .gsc-webResult {
     width: 45%;
+  }
+  .body-text-wrapper,
+  .body-text {
+    padding: 5em;
   }
 }
 

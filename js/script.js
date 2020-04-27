@@ -1,7 +1,4 @@
 $(document).ready(function () {
-	let urlParams = new URLSearchParams(window.location.search).get("q");
-	let urlParamsArray = urlParams.split(" ");
-
 	$(".food-selector").on("select2:select", function (e) {
 		$(':input[type="submit"]').removeAttr("disabled");
 	});
@@ -12,8 +9,9 @@ $(document).ready(function () {
 		$("#results-wrapper").css("display", "none");
 		$("#form-wrapper").css("height", "70vh");
 	}
-
 	if (new URLSearchParams(window.location.search).has("q") == true) {
+		let urlParams = new URLSearchParams(window.location.search).get("q");
+		let urlParamsArray = urlParams.split(" ");
 		$("#homepage-h2-title").css("display", "none");
 		$(':input[type="submit"]').removeAttr("disabled");
 		$(".food-selector").val(urlParamsArray).trigger("change");
