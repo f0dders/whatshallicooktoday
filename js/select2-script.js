@@ -21,12 +21,4 @@ $(document).ready(function () {
 		allowClear: true,
 		width: "resolve",
 	});
-
-	let searchParams = new URLSearchParams(window.location.search);
-	let searchParamsString = searchParams.get("q");
-	if (searchParams.has("q") == true) {
-		let searchParamsArray = searchParamsString.split(" ");
-		$(".food-selector").val(searchParamsArray);
-		$(".food-selector").trigger("change");
-	}
 });

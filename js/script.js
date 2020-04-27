@@ -1,9 +1,11 @@
 $(document).ready(function () {
+	let urlParams = new URLSearchParams(window.location.search).get("q");
+	let urlParamsArray = urlParams.split(" ");
+
 	$(".food-selector").on("select2:select", function (e) {
 		$(':input[type="submit"]').removeAttr("disabled");
 	});
 	$(".food-selector").on("select2:clear", function (e) {
-		// Do something
 		$(':input[type="submit"]').attr("disabled", "disabled");
 	});
 	if (new URLSearchParams(window.location.search).has("q") == false) {
@@ -14,6 +16,7 @@ $(document).ready(function () {
 	if (new URLSearchParams(window.location.search).has("q") == true) {
 		$("#homepage-h2-title").css("display", "none");
 		$(':input[type="submit"]').removeAttr("disabled");
+		$(".food-selector").val(urlParamsArray).trigger("change");
 	}
 });
 
