@@ -1140,7 +1140,7 @@ $(document).ready(function () {
 		"Yuzu",
 		"Zander",
 		"Zest",
-		"00 flour",
+		"00 flour"
 	];
 
 	$(".food-selector").select2({
