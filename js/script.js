@@ -44,5 +44,5 @@ function loadSpinner() {
 
 function showPage() {
 	$("#content-loader").css("display", "none");
-	$("#content-wrapper").css("display", "block");
+	$("#content-wrapper").css("display", "flex");
 }

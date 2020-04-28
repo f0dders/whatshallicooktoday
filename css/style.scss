@@ -28,12 +28,23 @@ h2 {
 	margin: 2em 0 0.5em 0;
 }
 
+#content-wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
 #form-wrapper {
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 0 0 50px 0;
+}
+
+#body-text-wrapper,
+#search-wrapper {
+	flex: 1 0 auto;
 }
 
 #search_form {
@@ -63,7 +74,7 @@ h2#homepage-h2-title {
 
 .body-text-wrapper {
 	background-color: $color6;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .body-text {

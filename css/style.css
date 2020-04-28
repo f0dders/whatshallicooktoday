@@ -17,6 +17,17 @@ h2 {
   margin: 2em 0 0.5em 0;
 }
 
+#content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +40,13 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 0 50px 0;
+}
+
+#body-text-wrapper,
+#search-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 #search_form {
@@ -58,7 +76,7 @@ h2#homepage-h2-title {
 
 .body-text-wrapper {
   background-color: #edf0f4;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .body-text {
