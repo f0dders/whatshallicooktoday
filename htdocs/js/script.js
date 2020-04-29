@@ -7,7 +7,7 @@ $(document).ready(function () {
 	});
 	if (new URLSearchParams(window.location.search).has("q") == false) {
 		$("#results-wrapper").css("display", "none");
-		$("#form-wrapper").css("height", "70vh");
+		$("#form-wrapper").css("height", "50vh");
 	}
 	if (new URLSearchParams(window.location.search).has("q") == true) {
 		let urlParams = new URLSearchParams(window.location.search).get("q");

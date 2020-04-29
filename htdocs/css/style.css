@@ -89,9 +89,10 @@ h2#homepage-h2-title {
 }
 
 footer {
-  padding: 2em;
+  padding: 1em;
   background: #5b616a;
   text-align: center;
+  color: #fff;
 }
 
 /* SELECT2 */

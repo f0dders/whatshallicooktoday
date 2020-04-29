@@ -12,7 +12,6 @@ $box-shadow: 0px 5px 5px -6px rgba(0, 0, 0, 0.253);
 }
 
 body {
-	// max-width: 1600px;
 	font-family: "Manrope", sans-serif;
 	background: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash_low.jpg) no-repeat
 		center center fixed;
@@ -86,9 +85,10 @@ h2#homepage-h2-title {
 }
 
 footer {
-	padding: 2em;
+	padding: 1em;
 	background: $color5;
 	text-align: center;
+	color: $white;
 }
 
 /* SELECT2 */
