@@ -34,6 +34,23 @@ function clearResults() {
 	$(".food-selector").val(null).trigger("change");
 }
 
+// function formatFood() {
+// 	let selector = $(".food-selector").select2("data");
+// 	for (var i = 0; i < selector.length; i++) {
+// 		selector[i] = selector[i].id.replace("-", " ");
+// 	}
+// }
+
+// NOT WORKING YET. REPLACE DASHES WITH SPACES IN OPTION TEXT?
+
+// function formatFood(food) {
+// 	if (!food.id) {
+// 		return food.text;
+// 	}
+// 	var foods = $(food.text.replace("-", " "));
+// 	return foods;
+// }
+
 // Thank you w3schools...
 
 var loadSpinnerTime;
