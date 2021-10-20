@@ -185,6 +185,34 @@ input.select2-search__field {
 	animation: spin 2s linear infinite;
 }
 
+/* CSS EFFECTS */
+
+.borderLeftRight {
+	display: inline-block;
+	position: relative;
+	color: #474e51;
+}
+
+.borderLeftRight::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: $color5;
+	transform-origin: bottom right;
+	transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.borderLeftRight:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/*****/
+
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
